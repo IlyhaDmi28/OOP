@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Collections;
 
 namespace Lab4
 {
@@ -14,7 +15,7 @@ namespace Lab4
         AligatorYear,
         OwlYear,
         ParrotYear,
-        SharkYear = 2015,
+        SharkYear = 2000,
         KarasYear,
     }
 
@@ -195,6 +196,9 @@ namespace Lab4
     {
         private List<Animal> animals = new List<Animal>();
 
+        public Animal this[int i] { get { return animals.ElementAt(i); } }
+
+
         public int WeightMammals = 0, numbMammals = 0;
         public int WeightBirds = 0, numbBirds = 0;
         public int WeightFish = 0, numbFish = 0;
@@ -226,11 +230,10 @@ namespace Lab4
 
         public void DisplayAllSort()
         {
-            var SortAnimals = animals.OrderByDescending(animal => animal.BirhYear);
-            foreach(var animal in SortAnimals)
-            {
-                Console.WriteLine(animal.ToString());
-            }
+
+            var sorted = animals.OrderBy(ob => ob.BirhYear).ToArray();
+
+            Array.ForEach(sorted, Console.WriteLine);
         }
 
     }
@@ -338,6 +341,14 @@ namespace Lab4
             Shark shark = new Shark("Акула", weight.SharkWeight, (int)BirthDay.SharkYear);
             Karas karas = new Karas("Карась", weight.KarasWeight, (int)BirthDay.KarasYear);
 
+            Zoo zoo = new Zoo();
+            zoo.Push(lion);
+            zoo.Push(tiger);
+            zoo.Push(owl);
+            zoo.Push(parrot);
+            zoo.Push(shark);
+            zoo.Push(karas);
+
             Mammals[] mammals = { lion, tiger, alig };
             Birds[] birds = { owl, parrot };
             Fish[] fish = { shark, karas };
@@ -370,85 +381,109 @@ namespace Lab4
                         break;
                 }
             } while (an != 0);
+            //Console.WriteLine("\n--------------------------------------------------------------------\n");
+
+            //Printer PrintType = new Printer();
+            //for (int i = 0; i < animals.Length; i++)
+            //{
+            //    for (int j = 0; j < animals[i].Length; j++)
+            //    {
+            //        PrintType.IAmPrinting(animals[i][j]);
+            //    }
+            //}
+
+            //Console.WriteLine("\n--------------------------------------------------------------------\n");
+
+            //Test test = new Test();
+            //((SimilarIn)test).Speak();
+            //test.Speak();
+
+            //Console.WriteLine("\n--------------------------------------------------------------------\n");
+            //Console.WriteLine("1. Млекопитающее");
+            //Console.WriteLine("2. Птица");
+            //Console.WriteLine("3. Рыба");
+            //Console.Write("Выберите вид животного: ");
+            //int HealType = Convert.ToInt32(Console.ReadLine());
+            //int HealAnimal = 0;
+            //switch (HealType)
+            //{
+            //    case 1:
+            //        {
+            //            Console.WriteLine("1. Лев");
+            //            Console.WriteLine("2. Тигр");
+            //            Console.WriteLine("3. Крокодил");
+            //            Console.Write("Выберите животного: ");
+            //            HealAnimal = Convert.ToInt32(Console.ReadLine());
+            //            break ;
+            //        }
+            //    case 2:
+            //        {
+            //            Console.WriteLine("1. Сова");
+            //            Console.WriteLine("2. Попугай");
+            //            Console.Write("Выберите животного: ");
+            //            HealAnimal = Convert.ToInt32(Console.ReadLine());
+            //            break;
+            //        }
+            //    case 3:
+            //        {
+            //            Console.WriteLine("1. Акула");
+            //            Console.WriteLine("2. Карась");
+            //            Console.Write("Выберите животного: ");
+            //            HealAnimal = Convert.ToInt32(Console.ReadLine());
+            //            break;
+            //        }
+            //    default:
+            //        break;
+            //}
+            //LivingEntity Heal = null;
+            //if (animals[HealType - 1][HealAnimal - 1] is Lion) Heal = lion;
+            //if (animals[HealType - 1][HealAnimal - 1] is Tiger) Heal = tiger;
+            //if (animals[HealType - 1][HealAnimal - 1] is Aligator) Heal = alig;
+            //if (animals[HealType - 1][HealAnimal - 1] is Owl) Heal = owl;
+            //if (animals[HealType - 1][HealAnimal - 1] is Parrot) Heal = parrot;
+            //if (animals[HealType - 1][HealAnimal - 1] is Shark) Heal = shark;
+            //if (animals[HealType - 1][HealAnimal - 1] is Karas) Heal = karas;
+            //do
+            //{
+            //    Console.WriteLine("1. Посмотреть здоровье");
+            //    Console.WriteLine("2. Полечиться");
+            //    Console.WriteLine("0. Выход");
+            //    int choise = Convert.ToInt32(Console.ReadLine());
+            //    switch (choise)
+            //    {
+            //        case 1: Console.WriteLine(Heal.hp); break;
+            //        case 2: Heal.Eat(); break;
+            //        case 0: return;
+            //        default:
+            //            Console.WriteLine("Ввыбор сделан некорректно!");
+            //            break;
+            //    }
+            //}
+            //while (true);
+
             Console.WriteLine("\n--------------------------------------------------------------------\n");
 
-            Printer PrintType = new Printer();
-            for (int i = 0; i < animals.Length; i++)
-            {
-                for (int j = 0; j < animals[i].Length; j++)
-                {
-                    PrintType.IAmPrinting(animals[i][j]);
-                }
-            }
-
-            Console.WriteLine("\n--------------------------------------------------------------------\n");
-
-            Test test = new Test();
-            ((SimilarIn)test).Speak();
-            test.Speak();
-            
-            Console.WriteLine("\n--------------------------------------------------------------------\n");
-            Console.WriteLine("1. Млекопитающее");
-            Console.WriteLine("2. Птица");
-            Console.WriteLine("3. Рыба");
-            Console.Write("Выберите вид животного: ");
-            int HealType = Convert.ToInt32(Console.ReadLine());
-            int HealAnimal = 0;
-            switch (HealType)
-            {
-                case 1:
-                    {
-                        Console.WriteLine("1. Лев");
-                        Console.WriteLine("2. Тигр");
-                        Console.WriteLine("3. Крокодил");
-                        Console.Write("Выберите животного: ");
-                        HealAnimal = Convert.ToInt32(Console.ReadLine());
-                        break ;
-                    }
-                case 2:
-                    {
-                        Console.WriteLine("1. Сова");
-                        Console.WriteLine("2. Попугай");
-                        Console.Write("Выберите животного: ");
-                        HealAnimal = Convert.ToInt32(Console.ReadLine());
-                        break;
-                    }
-                case 3:
-                    {
-                        Console.WriteLine("1. Акула");
-                        Console.WriteLine("2. Карась");
-                        Console.Write("Выберите животного: ");
-                        HealAnimal = Convert.ToInt32(Console.ReadLine());
-                        break;
-                    }
-                default:
-                    break;
-            }
-            LivingEntity Heal = null;
-            if (animals[HealType - 1][HealAnimal - 1] is Lion) Heal = lion;
-            if (animals[HealType - 1][HealAnimal - 1] is Tiger) Heal = tiger;
-            if (animals[HealType - 1][HealAnimal - 1] is Aligator) Heal = alig;
-            if (animals[HealType - 1][HealAnimal - 1] is Owl) Heal = owl;
-            if (animals[HealType - 1][HealAnimal - 1] is Parrot) Heal = parrot;
-            if (animals[HealType - 1][HealAnimal - 1] is Shark) Heal = shark;
-            if (animals[HealType - 1][HealAnimal - 1] is Karas) Heal = karas;
+            int choise;
             do
             {
-                Console.WriteLine("1. Посмотреть здоровье");
-                Console.WriteLine("2. Полечиться");
-                Console.WriteLine("0. Выход");
-                int choise = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1. Просмотреть всех");
+                Console.WriteLine("2. Количество хищных птиц");
+                Console.WriteLine("3. Средний вес вида");
+                Console.WriteLine("4. Просмотреть всех животных, отсортированных по году рождения");
+                Console.Write("Выберите пункт: ");
+                choise = Convert.ToInt32(Console.ReadLine());
                 switch (choise)
                 {
-                    case 1: Console.WriteLine(Heal.hp); break;
-                    case 2: Heal.Eat(); break;
-                    case 0: return;
+                    case 1: zoo.DisplayAll(); break;
+                    case 2: Zoo_Controler.PredatorBird(zoo); break;
+                    case 3: Zoo_Controler.AvarageWeight(zoo); break;
+                    case 4: Zoo_Controler.SortAnimals(zoo); break;
+                    case 0: choise = 0; break;
                     default:
                         Console.WriteLine("Ввыбор сделан некорректно!");
                         break;
                 }
-            }
-            while (true);
+            } while (choise != 0);
         }
     }
 }
