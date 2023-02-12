@@ -1,0 +1,23 @@
+Lab11
+
+Публичные конструкторы:
+.ctor
+
+Публичные методы:
+run
+ToString
+get_hp
+Eat
+Equals
+GetHashCode
+GetType
+
+Поля:
+Свойства:
+hp
+
+Реализованные интерфейсы:
+LivingEntity
+
+Метод, найденный по параметру
+
