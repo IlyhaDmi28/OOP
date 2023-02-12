@@ -1,0 +1,8 @@
+D:\лабы ООП\Lab8\Lab8\bin\Debug\Lab8.exe.config
+D:\лабы ООП\Lab8\Lab8\bin\Debug\Lab8.exe
+D:\лабы ООП\Lab8\Lab8\bin\Debug\Lab8.pdb
+D:\лабы ООП\Lab8\Lab8\obj\Debug\Lab8.csproj.AssemblyReference.cache
+D:\лабы ООП\Lab8\Lab8\obj\Debug\Lab8.csproj.SuggestedBindingRedirects.cache
+D:\лабы ООП\Lab8\Lab8\obj\Debug\Lab8.csproj.CoreCompileInputs.cache
+D:\лабы ООП\Lab8\Lab8\obj\Debug\Lab8.exe
+D:\лабы ООП\Lab8\Lab8\obj\Debug\Lab8.pdb
