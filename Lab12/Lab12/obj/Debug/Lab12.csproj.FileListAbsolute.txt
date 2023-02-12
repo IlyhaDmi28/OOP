@@ -1,0 +1,8 @@
+D:\лабы ООП\Lab12\Lab12\bin\Debug\Lab12.exe.config
+D:\лабы ООП\Lab12\Lab12\bin\Debug\Lab12.exe
+D:\лабы ООП\Lab12\Lab12\bin\Debug\Lab12.pdb
+D:\лабы ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.AssemblyReference.cache
+D:\лабы ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.SuggestedBindingRedirects.cache
+D:\лабы ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.CoreCompileInputs.cache
+D:\лабы ООП\Lab12\Lab12\obj\Debug\Lab12.exe
+D:\лабы ООП\Lab12\Lab12\obj\Debug\Lab12.pdb
