@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfLion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lion>
+    <HP>70</HP>
+    <Name>Лёва</Name>
+  </Lion>
+  <Lion>
+    <HP>70</HP>
+    <Name>Лев Петя</Name>
+  </Lion>
+  <Lion>
+    <HP>70</HP>
+    <Name>Котик</Name>
+  </Lion>
+</ArrayOfLion>

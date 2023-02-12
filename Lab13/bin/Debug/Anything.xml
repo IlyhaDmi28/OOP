@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lions>
+  <Lion Name="Лёва">
+    <Name>70</Name>
+  </Lion>
+  <Lion Name="Лев Петя">
+    <Name>70</Name>
+  </Lion>
+  <Lion Name="Котик">
+    <Name>70</Name>
+  </Lion>
+</Lions>
