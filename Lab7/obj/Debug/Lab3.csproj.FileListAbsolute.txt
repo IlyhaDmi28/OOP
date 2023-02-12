@@ -1,0 +1,16 @@
+D:\лабы ООП\Lab3\bin\Debug\Lab3.exe.config
+D:\лабы ООП\Lab3\bin\Debug\Lab3.exe
+D:\лабы ООП\Lab3\bin\Debug\Lab3.pdb
+D:\лабы ООП\Lab3\obj\Debug\Lab3.csproj.AssemblyReference.cache
+D:\лабы ООП\Lab3\obj\Debug\Lab3.csproj.SuggestedBindingRedirects.cache
+D:\лабы ООП\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\лабы ООП\Lab3\obj\Debug\Lab3.exe
+D:\лабы ООП\Lab3\obj\Debug\Lab3.pdb
+D:\лабы ООП\Lab7\bin\Debug\Lab3.exe.config
+D:\лабы ООП\Lab7\bin\Debug\Lab3.exe
+D:\лабы ООП\Lab7\bin\Debug\Lab3.pdb
+D:\лабы ООП\Lab7\obj\Debug\Lab3.csproj.AssemblyReference.cache
+D:\лабы ООП\Lab7\obj\Debug\Lab3.csproj.SuggestedBindingRedirects.cache
+D:\лабы ООП\Lab7\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\лабы ООП\Lab7\obj\Debug\Lab3.exe
+D:\лабы ООП\Lab7\obj\Debug\Lab3.pdb
