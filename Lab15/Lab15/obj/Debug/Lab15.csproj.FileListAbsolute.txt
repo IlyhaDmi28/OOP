@@ -1,0 +1,16 @@
+C:\Files\labs\OOP\Lab15\Lab15\bin\Debug\Lab15.exe.config
+C:\Files\labs\OOP\Lab15\Lab15\bin\Debug\Lab15.exe
+C:\Files\labs\OOP\Lab15\Lab15\bin\Debug\Lab15.pdb
+C:\Files\labs\OOP\Lab15\Lab15\obj\Debug\Lab15.csproj.AssemblyReference.cache
+C:\Files\labs\OOP\Lab15\Lab15\obj\Debug\Lab15.csproj.SuggestedBindingRedirects.cache
+C:\Files\labs\OOP\Lab15\Lab15\obj\Debug\Lab15.csproj.CoreCompileInputs.cache
+C:\Files\labs\OOP\Lab15\Lab15\obj\Debug\Lab15.exe
+C:\Files\labs\OOP\Lab15\Lab15\obj\Debug\Lab15.pdb
+D:\лабы ООП\Lab15\Lab15\bin\Debug\Lab15.exe.config
+D:\лабы ООП\Lab15\Lab15\bin\Debug\Lab15.exe
+D:\лабы ООП\Lab15\Lab15\bin\Debug\Lab15.pdb
+D:\лабы ООП\Lab15\Lab15\obj\Debug\Lab15.csproj.AssemblyReference.cache
+D:\лабы ООП\Lab15\Lab15\obj\Debug\Lab15.csproj.SuggestedBindingRedirects.cache
+D:\лабы ООП\Lab15\Lab15\obj\Debug\Lab15.csproj.CoreCompileInputs.cache
+D:\лабы ООП\Lab15\Lab15\obj\Debug\Lab15.exe
+D:\лабы ООП\Lab15\Lab15\obj\Debug\Lab15.pdb
